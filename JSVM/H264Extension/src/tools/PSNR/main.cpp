@@ -265,7 +265,7 @@ int main(int argc, char *argv[])
     py = (int)floor( acc * psnrY + 0.5 );
     pu = (int)floor( acc * psnrU + 0.5 );
     pv = (int)floor( acc * psnrV + 0.5 );
-    fprintf(stdout,"%d\t"OUT"\t"OUT"\t"OUT"\n",index,py/acc,py%acc,pu/acc,pu%acc,pv/acc,pv%acc);
+    fprintf(stdout,"%d\t" OUT "\t" OUT "\t" OUT "\n",index,py/acc,py%acc,pu/acc,pu%acc,pv/acc,pv%acc);
   }
   fprintf(stdout,"\n");
 
@@ -277,19 +277,19 @@ int main(int argc, char *argv[])
   {
     if( prefix_string )
     {
-      fprintf(stderr,"%s\t"OUT"\t"OUT"\t"OUT"\t"OUT"\n",prefix_string,br/acc,br%acc,py/acc,py%acc,pu/acc,pu%acc,pv/acc,pv%acc);
-      fprintf(stdout,"%s\t"OUT"\t"OUT"\t"OUT"\t"OUT"\n",prefix_string,br/acc,br%acc,py/acc,py%acc,pu/acc,pu%acc,pv/acc,pv%acc);
+      fprintf(stderr,"%s\t" OUT "\t" OUT "\t" OUT "\t" OUT "\n",prefix_string,br/acc,br%acc,py/acc,py%acc,pu/acc,pu%acc,pv/acc,pv%acc);
+      fprintf(stdout,"%s\t" OUT "\t" OUT "\t" OUT "\t" OUT "\n",prefix_string,br/acc,br%acc,py/acc,py%acc,pu/acc,pu%acc,pv/acc,pv%acc);
     }
     else
     {
-      fprintf(stderr,OUT"\t"OUT"\t"OUT"\t"OUT"\n",br/acc,br%acc,py/acc,py%acc,pu/acc,pu%acc,pv/acc,pv%acc);
-      fprintf(stdout,OUT"\t"OUT"\t"OUT"\t"OUT"\n",br/acc,br%acc,py/acc,py%acc,pu/acc,pu%acc,pv/acc,pv%acc);
+      fprintf(stderr,OUT "\t" OUT "\t" OUT "\t" OUT "\n",br/acc,br%acc,py/acc,py%acc,pu/acc,pu%acc,pv/acc,pv%acc);
+      fprintf(stdout,OUT "\t" OUT "\t" OUT "\t" OUT "\n",br/acc,br%acc,py/acc,py%acc,pu/acc,pu%acc,pv/acc,pv%acc);
     }
   }
   else
   {
-    fprintf(stderr,"total\t"OUT"\t"OUT"\t"OUT"\n",py/acc,py%acc,pu/acc,pu%acc,pv/acc,pv%acc);
-    fprintf(stdout,"total\t"OUT"\t"OUT"\t"OUT"\n",py/acc,py%acc,pu/acc,pu%acc,pv/acc,pv%acc);
+    fprintf(stderr,"total\t" OUT "\t" OUT "\t" OUT "\n",py/acc,py%acc,pu/acc,pu%acc,pv/acc,pv%acc);
+    fprintf(stdout,"total\t" OUT "\t" OUT "\t" OUT "\n",py/acc,py%acc,pu/acc,pu%acc,pv/acc,pv%acc);
   }
 
   fprintf(stdout, "\n");

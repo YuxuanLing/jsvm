@@ -9,10 +9,10 @@
 #include "QualityLevelAssigner.h"
 #include <math.h>
 #include <list>
+#include <stdio.h>
 #if WIN32
 #if VC2005
-#include <stdio.h>
-FILE _iob[3] = {__iob_func()[0], __iob_func()[1], __iob_func()[2]};
+FILE _iob[3] = { __acrt_iob_func(0), __acrt_iob_func(1), __acrt_iob_func(2)};
 #endif
 #include <io.h>
 #include <windows.h>
